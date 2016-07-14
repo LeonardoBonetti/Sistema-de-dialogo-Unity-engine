@@ -1,4 +1,4 @@
-# Sistema-de-Dialogo-
+# Sistema de Dialogo(Unity engine)
 Sistema de dialogo utilizando UItext do canvas na engine Unity, através de scripts c#. <br> <br>
 Versão 1.0<br><br>
 *O que o sistema de dialogo faz?*<br>
