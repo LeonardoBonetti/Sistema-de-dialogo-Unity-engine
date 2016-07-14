@@ -5,7 +5,7 @@ Versão 1.0<br><br>
 Esses scripts retornam um dialogo dentro de um json file, que você pode editar facilmente através de um editor de texto a sua preferencia.
 ##Arquivos principais
 
-**Você pode importar o projeto completo, que está na pasta Project**<br>
+**Você pode importar o projeto completo, que está no arquivo Project.rar**<br>
 Existem 2 scripts importante para o projeto(essênciais), são eles:
 * DialogControll
 * JsonDialogReader <br>
