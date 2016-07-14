@@ -1,0 +1,30 @@
+{
+
+    "Leonardo":{
+        "dialogs" : [
+            {
+            "content" : "Meu nome é Leonardo Bonetti e eu tenho 18 anos, sou estudante de programação :D."
+            },
+            {
+            "content" : "Gosto muito de c#"
+            },
+            {
+            "content" : "Curso análise e desenvolvimento de sistemas :D."
+            }
+        ]
+    },
+    
+    "João":{
+        "dialogs" : [
+            {
+            "content" : "Sou joão, eu gosto de javascript, e sou desenvolvedor front-end"
+            },
+            {
+            "content" : "Curso sistemas para internet"
+            }
+	   ] 
+    }
+	
+	   
+
+}
