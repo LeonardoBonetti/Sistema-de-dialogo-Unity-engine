@@ -144,5 +144,10 @@ Dentro do `Update()` temos uma estrutura de decisão que verifica se a variavel 
 ```
 Se eu quiser chamar a primeira fala do Leonardo, ``callDialog("Leonardo",0);`` Se tudo ocorrer bem, o seu textCanvas irá começar uma "animação" como se o texto do dialogo estivesse sendo escrito.<br>
 
+###SE FOR UTILIZAR O BUTTON DO CANVAS
+Caso precise utilizar buttons, não utilzie o Onclick() que já está no botão, pois ele suporta apenas um parâmetro<br>
+Em cada botão criado, adicione o script *ClickEvent* e edite os atributos que cada botão passará ao chamar o ``callDialog()``, caso haja necessidade mude o script como desejar.<br>
+
+###Perguntas, problemas e contribuição
 Qualquer pergunta e ou problema relacionado ao projeto, vá até issues, e nos diga o que aconteceu. <br>
 O projeto é open source, livre para estudo e comercialização, ou seja é da comunidade. Você também pode contribuir, seja no código ou na explicação (caso haja algum erro no código ou na explicação) > FORK > COMMIT > PUSH > PULL (para saber como funciona o GitHubt [clique aqui](https://www.youtube.com/watch?v=WVLhm1AMeYE))
