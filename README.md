@@ -105,7 +105,7 @@ Essa é a classe que você colocará no jogo, crie um GameObject e anexe esse sc
 Dentro do `Update()` temos uma estrutura de decisão que verifica se a variavel *inDialog* é verdadeira ou falsa, sempre que for verdadeira o script pegará Text anexado e tranformará no texto que esta na variavel `totalText`. NUNCA DE FORMA ALGUMA(a não ser que você adapte o script) de um set true nessa variavel sem chamar a função ``callDialog()``, pois ela mesma já seta como true, para que o script execute. Bom vamos lá:<br>
 
 ##Passo a passo:
-**Não esqueça de adicionar a pasta jsonFileReader no seu projeto, pois lá esta o SimpleJSON, que eu utilizei para ler o arquivo json para saber mais [clique aqui](http://wiki.unity3d.com/index.php/SimpleJSON) **
+**Não esqueça de adicionar a pasta jsonFileReader no seu projeto, pois lá esta o SimpleJSON, que eu utilizei para ler o arquivo json para saber mais [clique aqui](http://wiki.unity3d.com/index.php/SimpleJSON)**
 
 1. Edite o arquivo json com os seus personagens e falas(coloque no diretorio apontado no script. Que e "assets/dialogos.json")
 2. Adicione no projeto os scripts aqui apresentados.
