@@ -52,7 +52,7 @@ Salientando que **JsonDialogReader:** é uma classe não Behaviour, portanto dev
 <br><br>
 **DialogControll**: O DialogControll surgiu do video do canal GamesIndie, para ver o video [clique aqui](https://www.youtube.com/watch?v=U572sXp21DU)<br> 
 ```cs
- public Text DialogText; 
+    public Text DialogText; 
     public string TotalText; //Texto a ser escrito na tela
     public int CurrentIndex; // Palavra atual do texto que será escrito na tela
     public float TextVelocity; //Intervalo de escrita de cada letra
@@ -78,7 +78,7 @@ Salientando que **JsonDialogReader:** é uma classe não Behaviour, portanto dev
             {
                 if (CurrentIndex < TotalText.Length)
                 {
-                    DialogText.text += totalText[indiceAtual];
+                    DialogText.text += TotalText[indiceAtual];
                     CurrentIndex++;
                     TimeCout = 0;
                 }
@@ -97,7 +97,7 @@ Salientando que **JsonDialogReader:** é uma classe não Behaviour, portanto dev
         DialogText.text = "";
         CurrentIndex = 0;
         TimeCout = 0;
-        totalText = jsonDialogReader.getJsonDialog(name, index );
+        TotalText = jsonDialogReader.getJsonDialog(name, index );
         InDialog = true;
     }
 ```
