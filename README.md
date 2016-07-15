@@ -52,12 +52,12 @@ Salientando que **JsonDialogReader:** é uma classe não Behaviour, portanto dev
 <br><br>
 **DialogControll**: O DialogControll surgiu do video do canal GamesIndie, para ver o video [clique aqui](https://www.youtube.com/watch?v=U572sXp21DU)<br> 
 ```cs
- public Text dialogText; 
-    public string totalText; //Texto a ser escrito na tela
-    public int indiceAtual; // Palavra atual do texto que será escrito na tela
-    public float velocidadeTexto; //Intervalo de escrita de cada letra
-    public float contaTempo;
-    public bool inDialog; //Controle de dialogo
+ public Text DialogText; 
+    public string TotalText; //Texto a ser escrito na tela
+    public int CurrentIndex; // Palavra atual do texto que será escrito na tela
+    public float TextVelocity; //Intervalo de escrita de cada letra
+    public float TimeCout;
+    public bool InDialog; //Controle de dialogo
 
     public JsonDialogReader jsonDialogReader = new JsonDialogReader();
 
@@ -68,25 +68,25 @@ Salientando que **JsonDialogReader:** é uma classe não Behaviour, portanto dev
 
     void Update()
     {
-        if (!inDialog)
+        if (!InDialog)
         {
         }
         else
         {
-            contaTempo += Time.deltaTime;
-            if(contaTempo > velocidadeTexto)
+            TimeCout += Time.deltaTime;
+            if(TimeCout > TextVelocity)
             {
-                if (indiceAtual < totalText.Length)
+                if (CurrentIndex < TotalText.Length)
                 {
-                    dialogText.text += totalText[indiceAtual];
-                    indiceAtual++;
-                    contaTempo = 0;
+                    DialogText.text += totalText[indiceAtual];
+                    CurrentIndex++;
+                    TimeCout = 0;
                 }
                 else
                 {
-                    inDialog = false;
-                    contaTempo = 0;
-                    indiceAtual = 0;
+                    InDialog = false;
+                    TimeCout = 0;
+                    CurrentIndex = 0;
                 }              
             }
         }
@@ -94,11 +94,11 @@ Salientando que **JsonDialogReader:** é uma classe não Behaviour, portanto dev
 
 	public void callDialog(string name, int index)
     {
-        dialogText.text = "";
-        indiceAtual = 0;
-        contaTempo = 0;
+        DialogText.text = "";
+        CurrentIndex = 0;
+        TimeCout = 0;
         totalText = jsonDialogReader.getJsonDialog(name, index );
-        inDialog = true;
+        InDialog = true;
     }
 ```
 Essa é a classe que você colocará no jogo, crie um GameObject e anexe esse script nele, no inspector você pode mudar a velocidade em que cada letra será escrita.<br>
