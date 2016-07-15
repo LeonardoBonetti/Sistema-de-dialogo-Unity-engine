@@ -32,7 +32,7 @@ public class DialogControll : MonoBehaviour {
             {
                 if (CurrentIndex < TotalText.Length)
                 {
-                    DialogText.text += totalText[indiceAtual];
+                    DialogText.text += TotalText[CurrentIndex];
                     CurrentIndex++;
                     TimeCout = 0;
                 }
@@ -51,7 +51,7 @@ public class DialogControll : MonoBehaviour {
         DialogText.text = "";
         CurrentIndex = 0;
         TimeCout = 0;
-        totalText = jsonDialogReader.getJsonDialog(name, index );
+        TotalText = jsonDialogReader.getJsonDialog(name, index );
         InDialog = true;
     }
 }
