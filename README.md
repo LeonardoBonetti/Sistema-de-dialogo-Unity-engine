@@ -78,7 +78,7 @@ Salientando que **JsonDialogReader:** é uma classe não Behaviour, portanto dev
             {
                 if (CurrentIndex < TotalText.Length)
                 {
-                    DialogText.text += TotalText[indiceAtual];
+                    DialogText.text += TotalText[CurrentIndex];
                     CurrentIndex++;
                     TimeCout = 0;
                 }
